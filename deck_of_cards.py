@@ -50,13 +50,12 @@ class Player(object):
         return self.hand.pop()
 
 
-#card = Card("Clubs", 6)
-# card.show()
+
 deck = Deck()
 deck.shuffle()
 deck.show()
 
+liz = Player("Liz")
+liz.draw(deck).draw(deck)
+liz.showHand()
 
-# liz = Player("Liz")
-# liz.draw(deck).draw(deck)
-# liz.showHand()
